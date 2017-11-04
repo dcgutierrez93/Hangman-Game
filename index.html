@@ -1,35 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en-us">
+
+<head>
     <meta charset="utf-8">
-    <title>Hangman</title>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="./assets/css/materialize.min.css"  media="screen,projection"/>
-    <!--Custom Style Sheet-->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Hangman Game</title>
+    <!-- Nice Header -->
+    <link rel="stylesheet" href="assets/css/nice80sheader.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="center-align">
-      <div class="dcg-separator-3"></div>
-      <img class="responsive-image" src="./assets/images/HangmanTitle.jpg" alt="Hangman">
-    </header>
-
-    <!-- Game Section -->
-    <div>
-
+<body>
+    <div id="wrapper">
+        <h1 class="chrome">HANGMAN</h1>
+        <h3 class="dreams">80s style</h3>
     </div>
 
+    <div id="container">
+        <h2 id="music"></h2>
+        <div id="band-div"><img src="images/hangman-boardgame.jpg" alt="hangman board game from 80s"></div>
+        <div id="game-section">
+            <p>Press any key to get started!</p>
+            <div>
+                <h3 class="section-title">Wins</h3>
+                <div id="wins"></div>
+            </div>
+            <div id="current-word-section">
+                <h3 class="section-title">Current Word</h3>
+                <div id="current-word"></div>
+            </div>
+            <div id="guesses-remaining-section">
+                <h3 class="section-title">Number of Guesses Remaining</h3>
+                <div id="guesses-remaining"></div>
+            </div>
+            <div id="guessed-letters-section">
+                <h3 class="section-title">Letters Already Guessed</h3>
+                <div id="guessed-letters"></div>
+            </div>
+        </div>
+    </div>
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="./assets/javascript/materialize.min.js"></script>
-    <!--Javascript-->
-    <script type="text/javascript" src="./assets/javascript/game.js"></script>
-  </body>
+    <!-- Link Javascript file -->
+</body>
+
 </html>
